@@ -18,10 +18,23 @@ while (n <= 0)
 
   if (userNumber => 23 || userNumber > 0)
   {
-    for (i=0; i < userNumber; i++)
+    int row = userNumber;
+    for (i=0; i < row; i++)
     {
-      printf("#");
-      
+      int character = userNumber;
+      for (i=0; i < character; character++)
+      {
+          if (character == userNumber)
+          {
+            userNumber--;
+            printf("/n");
+            break;
+          } else if (character < (userNumber - 2)) {
+            printf(" ");
+          } else {
+            printf("#");
+          }
+      }
     }
      
   } else {
