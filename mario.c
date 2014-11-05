@@ -1,20 +1,19 @@
 #include <stdio.h>
+#include "GetInt.c"
 
 int n = 0;
 while (n <= 0)
 {
-  int userNumber;
   char keypressed;
   char buffer[20];
   int double num;
 
-  if (userNumber == null)
+  do
   {
     printf("Please enter the pyramid's height: ");
     scanf(" %d", &userNumber); getchar();
  
-  }  
-//printf("The number you entered was: %d\n", userNumber);
+  } while (%d < 23 || %d <= 0); 
 
   if (userNumber => 23 || userNumber > 0)
   {
